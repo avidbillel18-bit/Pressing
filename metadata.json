@@ -1,0 +1,8 @@
+{
+  "name": "مغسلة الأفرشة - إدارة الطلبات",
+  "description": "تطبيق داخلي لمتابعة طلبات غسيل الأفرشة والبطانيات وتنسيق العمل الفوري بين العمال",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

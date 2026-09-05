@@ -1,0 +1,69 @@
+{
+  "entities": {
+    "orders": {
+      "title": "Order",
+      "description": "Laundry and bedding cleaning orders",
+      "type": "object",
+      "properties": {
+        "orderNumber": {
+          "type": "number",
+          "description": "Sequential order number 0-1000 unique among active orders"
+        },
+        "customerFirstName": {
+          "type": "string",
+          "description": "Customer first name"
+        },
+        "customerLastName": {
+          "type": "string",
+          "description": "Customer last name"
+        },
+        "customerPhone": {
+          "type": "string",
+          "description": "Customer Algerian phone number"
+        },
+        "itemType": {
+          "type": "string",
+          "description": "Item category: blankets, bedding, carpets, duvets, etc."
+        },
+        "itemCount": {
+          "type": "number",
+          "description": "Number of items in the order"
+        },
+        "entryDate": {
+          "type": "string",
+          "description": "Entry date in YYYY-MM-DD format"
+        },
+        "expectedExitDate": {
+          "type": "string",
+          "description": "Expected pickup date in YYYY-MM-DD format"
+        },
+        "actualExitDate": {
+          "type": "string",
+          "description": "Actual delivery date and time when delivered"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["في الغسيل", "جاهز", "تم التسليم"],
+          "description": "Current status of the laundry batch"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Worker notes such as stain marks, special wash instructions, upstairs storage shelf"
+        },
+        "storageLocation": {
+          "type": "string",
+          "description": "Upstairs storage shelf or spot identifier"
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Timestamp created"
+        },
+        "updatedAt": {
+          "type": "number",
+          "description": "Timestamp updated"
+        }
+      },
+      "required": ["orderNumber", "customerFirstName", "customerLastName", "customerPhone", "itemType", "entryDate", "expectedExitDate", "status"]
+    }
+  }
+}
